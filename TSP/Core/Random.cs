@@ -17,7 +17,7 @@ namespace TSP.Core
             Max = max;
             Preview = -1;
             List = Enumerable.Range(min, max - min).ToList();
-        }
+        }   
 
         public int Next()
         {

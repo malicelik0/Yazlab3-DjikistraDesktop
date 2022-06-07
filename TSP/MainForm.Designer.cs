@@ -353,7 +353,7 @@
             this.newRandomCitiesToolStripMenuItem.ShowShortcutKeys = false;
             this.newRandomCitiesToolStripMenuItem.Size = new System.Drawing.Size(310, 26);
             this.newRandomCitiesToolStripMenuItem.Text = "&New Random Cities";
-            this.newRandomCitiesToolStripMenuItem.Click += new System.EventHandler(this.newRandomCitiesToolStripMenuItem_Click);
+           // this.newRandomCitiesToolStripMenuItem.Click += new System.EventHandler(this.newRandomCitiesToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -366,7 +366,7 @@
             this.timerFitnessGraphToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F5)));
             this.timerFitnessGraphToolStripMenuItem.Size = new System.Drawing.Size(310, 26);
             this.timerFitnessGraphToolStripMenuItem.Text = "Timer Fitness Graph";
-            this.timerFitnessGraphToolStripMenuItem.Click += new System.EventHandler(this.timerFitnessGraphToolStripMenuItem_Click);
+          //  this.timerFitnessGraphToolStripMenuItem.Click += new System.EventHandler(this.timerFitnessGraphToolStripMenuItem_Click);
             // 
             // timerGenerationGraphToolStripMenuItem
             // 
@@ -374,7 +374,7 @@
             this.timerGenerationGraphToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F6)));
             this.timerGenerationGraphToolStripMenuItem.Size = new System.Drawing.Size(310, 26);
             this.timerGenerationGraphToolStripMenuItem.Text = "Timer Generation Graph";
-            this.timerGenerationGraphToolStripMenuItem.Click += new System.EventHandler(this.timerGenerationGraphToolStripMenuItem_Click);
+            //this.timerGenerationGraphToolStripMenuItem.Click += new System.EventHandler(this.timerGenerationGraphToolStripMenuItem_Click);
             // 
             // generationFitnessGraphToolStripMenuItem
             // 
@@ -382,7 +382,7 @@
             this.generationFitnessGraphToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F7)));
             this.generationFitnessGraphToolStripMenuItem.Size = new System.Drawing.Size(310, 26);
             this.generationFitnessGraphToolStripMenuItem.Text = "Generation Fitness Graph";
-            this.generationFitnessGraphToolStripMenuItem.Click += new System.EventHandler(this.generationFitnessGraphToolStripMenuItem_Click);
+          //  this.generationFitnessGraphToolStripMenuItem.Click += new System.EventHandler(this.generationFitnessGraphToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
@@ -567,7 +567,7 @@
             this.btnStartStop.Name = "btnStartStop";
             this.btnStartStop.Size = new System.Drawing.Size(122, 30);
             this.btnStartStop.TabIndex = 15;
-            this.btnStartStop.Text = "&Start Process";
+            this.btnStartStop.Text = "&Başlat";
             this.btnStartStop.UseVisualStyleBackColor = false;
             this.btnStartStop.CheckedChanged += new System.EventHandler(this.btnStartStop_CheckedChanged);
             // 
