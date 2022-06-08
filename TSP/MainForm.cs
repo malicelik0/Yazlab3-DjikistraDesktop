@@ -716,9 +716,7 @@ namespace TSP
                             th.Priority = ThreadPriority.Highest;
                             break;
                     }
-                    //
-                    // Set Thread Affinity 
-                    //
+                   
                     Thread.BeginThreadAffinity();
                 }
             }
@@ -726,7 +724,7 @@ namespace TSP
 
         private void SetTimeGraph(double eliteFitness, long generation, bool fitnessRefreshed)
         {
-            var timeLenght = (Environment.TickCount - _startedTick) / 10; // Convert to MiliSecond
+            var timeLenght = (Environment.TickCount - _startedTick) / 10; 
             if (pGAToolStripMenuItem.Checked)
             {
                 if (fitnessRefreshed)
@@ -1267,44 +1265,7 @@ namespace TSP
             locations.Add("CONTINENTAL PHARMACY #2", new PointLatLng(49.236665, -123.065088));
             locations.Add("CORNING DRUGS #2", new PointLatLng(49.278414, -123.098542));
 
-            //locations.Add("CORNING DRUGS LTD.", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("COSTCO PHARMACY # 552", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("DAVIE PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("DOWNTOWN CLINIC PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("DTES CONNECTIONS PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("DUNDAS REMEDY'S RX PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("EAST END PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("EASTSIDE PHARMACY LTD.", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("EVERWELL PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("FINLANDIA NATURAL PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("FRASER NEIGHBOURHOOD PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("FRASER OUTREACH PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("FRASER PHARMACHOICE", new PointLatLng(49.2088562, -123.14028289999999));
-
-            //locations.Add("FRASER PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("GARLANE PHARMACY #1", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("GARLANE PHARMACY #2", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("GARLANE PRESCRIPTIONS", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("HARVARD PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("HEALTHSIDE PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("JEFF'S PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("JERICHO PHARMACY & HEALTH FOOD STORE", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("KERRISDALE MEDICINE CENTRE PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("KINGSWAY PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("KRIPPS HEALTHCARE RX", new PointLatLng(49.2088562, -123.14028289999999));
-
-            //locations.Add("LANCASTER MEDICAL SUPPL. & PRESC. #1", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LAUREL PRESCRIPTIONS", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LG PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LITTLE MOUNTAIN PHARMACY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LOBLAW PHARMACY #1517", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LOBLAW PHARMACY #1520", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LOBLAW PHARMACY #4617", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LOBLAW PHARMACY #4979", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LONDON DRUGS # 2", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LONDON DRUGS # 4 - BROADWAY", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LONDON DRUGS # 7 - HASTINGS", new PointLatLng(49.2088562, -123.14028289999999));
-            //locations.Add("LONDON DRUGS #10", new PointLatLng(49.2088562, -123.14028289999999));
+            
         }
         private void map_MouseClick(object sender, MouseEventArgs e)
         {
@@ -1321,25 +1282,7 @@ namespace TSP
                 refreshDGV_CityPositions();
             }
         }
-        //private void MainMap_Load(object sender, EventArgs e)
-        //{
         
-        //    MainMap.MapProvider = GoogleMapProvider.Instance;
-        //    GMaps.Instance.Mode = AccessMode.ServerOnly;
-        //    MainMap.SetPositionByKeywords("Vancouver, Canada");
-        //    MainMap.ShowCenter = false;
-        //    MainMap.Overlays.Add(pharmOverlay);
-        //    MainMap.Overlays.Add(routes);
-        //    addLocations();
-
-        //    //var bs = new BindingSource(locations, null);
-
-        //    //comboBox1.DataSource = bs;
-        //    //comboBox1.DisplayMember = "Key";
-        //    //comboBox1.ValueMember = "Value";
-        //    // feyyaz
-        //    MainMap.MouseClick += new MouseEventHandler(map_MouseClick);
-        //}
 
         private void MainForm_Load(object sender, EventArgs e)
         {
